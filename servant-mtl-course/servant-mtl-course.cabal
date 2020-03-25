@@ -1,0 +1,35 @@
+cabal-version:       2.2
+name:                servant-mtl-course
+version:             0.1.0.0
+synopsis:            Build skills with MTL and Servant
+description:         A collection of teaching modules to deepen understanding of
+                     MTL, Servant and classy optics.
+license:             BSD-3-Clause
+license-file:        LICENCE
+author:              QFPL @ Data61
+maintainer:          oᴉ˙ldɟb@ʇɔɐʇuoɔ
+copyright:           Copyright (C) 2019 Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+category:            Education, Testing
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+
+library
+  exposed-modules:     ClassyOpticsRefactor.Exercise
+                     , DataKinds.Exercise
+                     , MTLRefactor.Exercise
+                     , TypeFamilies.Associated.Exercise
+  build-depends:       base >= 4.11 && < 4.13
+                     , aeson ^>= 1.3.1.1
+                     , containers >= 0.5.11 && < 0.7
+                     , directory ^>= 1.3.1.5
+                     , lens > 4.15 && < 4.18
+                     , mtl ^>= 2.2.2
+                     , servant ^>= 0.14.1
+                     , servant-server ^>= 0.14.1
+                     , stm ^>= 2.4.5.1
+                     , text ^>= 1.2
+                     , transformers ^>= 0.5.5
+                     , warp ^>= 3.2.23
+  hs-source-dirs:      src
+  ghc-options:         -Wall
+  default-language:    Haskell2010
